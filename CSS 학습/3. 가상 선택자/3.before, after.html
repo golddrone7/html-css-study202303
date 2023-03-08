@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li 태그 위에 가상의 li가 생겨서 번호가 붙어서 텍스트에 이어 붙이는 방식 */
+        li::before{
+            /* 필수속성 : content */
+            content: '번호';
+        }
+
+        /* 뒤에 붙음 */
+        /* after와 before 속성에는 꼭 필수 속성으로 content가 필요하다 */
+        /* 도형을 만들 때는 display 속성이 필수 */
+        li::after{
+            /* content: 'ㅎㅎ'; */
+            content: '';  /* 필요 없을 땐 빈 블록으로 */
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: red;
+            border-radius: 50%;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!-- h1{hello}
+    <H1></H1>
+    <H2></H2>
+    <H3></H3>    
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div> -->
+    <!-- ul>li{$}*10 -->
+    <ul>
+        <!-- <span>번호</span> -->
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+</body>
+</html>

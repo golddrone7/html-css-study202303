@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+        
+            border: 2px solid gray;
+            
+        }
+        /* body 대비 60% body는 항상 100%(화면전체) */
+        .root{
+            width: 60%;
+
+        }
+        /* root 대비 50% */
+        .parent{
+            width: 50%;
+
+        }
+
+        /* parent 대비 50% */
+        .child{
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="root">Root
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+</body>
+</html>
