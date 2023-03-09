@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 클리어 픽스, 해제용 클래스 */
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        /* 리펙토링 : 공통 코드는 클래스를 추가해서 만들어주자 */
+        .ct {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid;
+            margin: 20px;
+        }
+
+        
+
+        .container1{
+            border-color: red;
+            /* 쓰면 안되는 방법2. 간편하지만 버그성 방법임 나중에 overflow를 쓰지 못함! */
+            /* overflow: hidden; */
+        }
+
+        /* .container1::after{
+            content: '';
+            display: block;
+            clear: both;
+        } */
+
+        .container2{
+            border-color: blue;
+        }
+
+        .container3{
+            border-color: green;
+        }
+
+
+        .box{
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            border-radius: 20px;
+            float: left;
+        }
+        /* 쓰면 안되는 방법1. HTML은 구조를 잡기 위한 것인데 vbox를 박음  */
+        .vbox{  
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="ct container1 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- 방법1 -->
+        <!-- <div class="vbox"></div> --> 
+    </div>
+    <div class="ct container2 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- 방법1 -->
+        <!-- <div class="vbox"></div> --> 
+    </div>
+    <div class="ct container3 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- 방법1 -->
+        <!-- <div class="vbox"></div> --> 
+    </div>
+</body>
+</html>
