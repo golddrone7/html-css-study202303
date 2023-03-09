@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../../common.css">
+    <style>
+        section{
+            background-color: rgba(211, 211, 211, 0.753);
+            border: 4px double gray;
+            width: 80%;
+            margin: 20px auto;
+        }
+    
+        section h1{
+            text-align: center;
+            padding: 30px;
+            font-weight: 700;
+            font-size: 1.5em;
+            font-family: sans-serif;
+        }
+        section nav{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section nav strong{
+            color: yellow;
+            font-weight: 700;
+        }
+        section .main{
+            
+            background-color: rgb(102, 94, 94);
+        }
+
+        
+        section .main .content .flower{
+            float: left;
+            width: 22.5%;
+            min-height: 350px;
+            border: 1px solid white;
+            margin-left: 2%;
+            margin-bottom: 20px;
+            margin-top : 20px;
+
+        }
+        section .main .content .flower:nth-child(1){
+            background-color: red;
+        }
+        section .main .content .flower:nth-child(2){
+            background-color: pink;
+        }
+        section .main .content .flower:nth-child(3){
+            background-color: orange;
+        }
+        section .main .content .flower:nth-child(4){
+            background-color: yellow;
+        }
+        section .main .content .flower:last-child{
+            margin-right: 2%;
+        }
+
+        section .main .content .img{
+            height: 200px;
+            margin: 5px;
+            border: 1px solid white;
+            
+        }
+        section .main .content .flower:nth-child(1) .img{       
+            background: url(../../img/tulip.jpg) ;
+            background-size: cover;
+        }
+        section .main .content .flower:nth-child(2) .img{       
+            background: url(../../img/jebi.jpg) ;
+            background-size: cover;
+        }
+        section .main .content .flower:nth-child(3) .img{       
+            background: url(../../img/hobak.jpg) ;
+            background-size: cover;
+        }
+        section .main .content .flower:nth-child(4) .img{       
+            background: url(../../img/sunflower.jpg) ;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>나의 아름다운 정원</h1>
+        <nav>사람들은 아마 자신에게 <strong>자신감을 복돋워 주는</strong> 표정 있는 꽃들을 선호할 것이다.</nav>
+        <div class="main">
+            <div class="content clearfix">
+                <div class="flower">
+                    <div class="img"></div>
+                    <p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+                        붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.</p>
+                </div>
+                <div class="flower">
+                    <div class="img"></div>
+                    <p>드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+                        어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.</p>
+                </div>
+                <div class="flower">
+                    <div class="img"></div>
+                    <p>색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+                        매우 완숙한 이미지를 풍기는 꽃이다.</p>
+                </div>
+                <div class="flower">
+                    <div class="img"></div>
+                    <p>태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+                        속하며 송이가 적어야 제격이다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
