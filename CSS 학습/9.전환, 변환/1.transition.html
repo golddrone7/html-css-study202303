@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 50px;
+            /* transition-property: background width; */
+            /* transition-property: all; */
+            transition-property: width, background;
+            transition-duration: 1s, 2s; 
+            /* 가로는 1초, 세로는 2초에 변함 */
+            /* transition-delay: 1s; */
+            /* 올리고 1초있다가 반응 */
+            transition-timing-function: steps(3);
+            /* transition-duration: 1s; */
+
+            transition : all 1s 2s linear;
+            /* 모든 속성에 대해서 1초에 진행 2초 딜레이 균일한 속도로*/
+            /* all기본값, 딜레이 0초 */
+        }
+        .box:hover{
+            width: 300px;
+            background: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
