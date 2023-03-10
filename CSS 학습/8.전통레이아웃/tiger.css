@@ -1,0 +1,82 @@
+@import url(../../common.css);
+
+body{
+    background: darkgray;
+}
+#wrapper{
+    width: 90%;
+    margin: 0 auto;
+    background: rgb(233, 212, 212);
+}
+
+#wrapper header{
+    background: rgb(67, 67, 124);
+    text-align: center;
+    padding: 10px 0px 30px;
+    
+}
+
+#wrapper header h1{
+    font-size: 1.8em;
+    color: rgb(226, 218, 146);
+    font-weight: 700;
+}
+
+#wrapper header h1 strong{
+    color: white;
+    font-size: 180%;
+}
+#wrapper header h1 span{
+    font-size: 130%;
+}
+#wrapper header h1 em{
+    color: rgb(158, 154, 150);
+    font-size: 150%;
+}
+
+#wrapper .container{
+    height: fit-content;
+    position: relative;
+}
+#wrapper .container .menu{
+    /* background: red; */
+    width: 15%;
+    position: absolute;
+    left: 0;
+    /* float: left; */
+    height: inherit;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+#wrapper .container .menu a{
+    text-decoration: underline;
+}
+#wrapper .container .content{
+    float:right;
+    background-color: blue;
+    width: 85%;
+
+}
+
+#wrapper .container .content h2{
+    background-color: brown;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: yellow;
+}
+
+#wrapper .container .content p{
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+
+#wrapper footer{
+    background-color: rgba(128, 128, 128, 0.87);
+    padding: 15px 40px;
+    
+}
