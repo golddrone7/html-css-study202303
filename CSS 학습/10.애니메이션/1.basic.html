@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: greenyellow;
+        }
+        .box:hover{
+            animation-name: grow-up;
+            /* 애니메이션 이름 지정 */
+            animation-duration: 2s;
+            /* 2초에 걸쳐서 애니메이션 진행 */
+            animation-iteration-count: infinite;
+            /* 애니메이션 몇번 반복할지 */
+            animation-delay: 1s;
+           /* 딜레이 1초 */
+            animation-timing-function: linear;
+             /* linear 균일한 속도 ease 빨랐다 느림 */
+            /* 단축속성 */
+            /* animation: grwo-up 2s 3 1s; */
+        }
+        /* 애니메이션 효과 만들기 */
+        @keyframes grow-up {
+            0%{ 
+                width: 100px;
+                background: greenyellow;
+            }
+            50%{
+                width: 500px;
+                background: orange;
+            }
+            100%{
+                width: 300px;
+                background: violet;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
