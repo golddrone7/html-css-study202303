@@ -623,13 +623,77 @@ footer .inner .list li a:hover{
     text-decoration: underline;
 }
 
+/* 반응형 웹 디자인 */
+/* 노트북 해상도 1600px 미만 */
+/* 1599px미만은 이 스타일을 적용하세요 */
+@media screen and (max-width:1599px) {
+    header .inner-header 
+    ,section .sub-container 
+    ,footer .inner{
+        width: 95%;
+    }
+    header .inner-header .gnb{
+        margin-left: 50%;
+    }
+    header .inner-header .gnb li{
+        margin-right: 40px;
+    }
+}
+
+/* 태블릿 1024px 미만 해상도(아이패드 프로)*/
+@media screen and (max-width:1024px) {
+    header .inner-header nav{
+        display: none;
+    }
+    header .inner-header .gnb-mobile {
+        display: block;
+        float: right;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    section.main-title{
+        width: 80%;
 
 
+    }
+    section.me ul.list > li p {
+        margin-bottom: 10px;
+    }
+    section.me ul.list ul.in li p::before{
+        left: -20px;
+    }
+    section.sns ul li .bottom{
+        padding-left: 5px;
+    }
 
+    footer .inner .list{
+        display: none;
+    }
+    footer .inner .ft-logo{
+        margin-top: 15px;
+    }
+}
 
+/* 테블릿 768px 해상도(아이패드 미니) */
+@media screen and (max-width: 768px){
+    section.main .main-title h2{
+        font-size: 40px;
+    }
+    section.main .main-title p{
+        font-size: 20px;
+    }
+    /* flex를 풀 때는 flex-direction : column; 으로 함 */
+    section.about .sub-container li{
+        float: none;
+        width: 100%;
+        margin-bottom: 150px;
+    }
+    section.about .sub-container li .img-box{
+        height: 500px;
+    }
 
-
-
+}
 
 
 
